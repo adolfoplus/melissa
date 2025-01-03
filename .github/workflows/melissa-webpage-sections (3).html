@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melissa Camacho - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .nav-wrapper {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #2c3e50;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .header {
+            padding-top: 80px;
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9));
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-content {
+            padding: 4rem 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .brand-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        section {
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('/api/placeholder/1200/800'); /* Replace with actual award image */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .section-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #2980b9;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#toktok">TokTok</a></li>
+                <li><a href="#smac">SMAC</a></li>
+                <li><a href="#hsc">HSC</a></li>
+                <li><a href="#citydreams">City Dreams</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header id="home" class="header">
+        <div class="header-content">
+            <div class="container">
+                <h1>Melissa Camacho</h1>
+                <p>Community Leader & Education Advocate</p>
+                <img src="/home/neo/Descargas/meli/meli.jpeg" alt="Vision & Action Award Ceremony" class="brand-image">
+            </div>
+        </div>
+    </header>
+
+    <section id="toktok">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">TokTok Digital Marketing</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="/home/neo/Descargas/meli/tok.png" alt="Digital Marketing Services" class="project-image">
+                        <h3 class="project-title">Digital Marketing Excellence</h3>
+                        <p>Professional digital marketing services helping businesses grow their online presence and reach their target audience effectively.</p>
+                        <a href="https://www.toktok-ai.com" class="project-link" target="_blank">Visit Website →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="smac">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Students Making A Change (SMAC)</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="/home/neo/Descargas/meli/m.png" alt="SMAC Student Group" class="project-image">
+                        <h3 class="project-title">Student Empowerment</h3>
+                        <p>A powerful initiative through Coleman Advocates empowering students to create positive change in their communities.</p>
+                        <a href="https://colemanadvocates.org" class="project-link" target="_blank">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hsc">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Home Support Cooperative</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="/home/neo/Descargas/meli/m.png" alt="Home Support Services" class="project-image">
+                        <h3 class="project-title">Community Care</h3>
+                        <p>A cooperative focused on providing essential home support and companionship services to those in need.</p>
+                        <a href="https://hsc.elevate.coop" class="project-link" target="_blank">Visit Website →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="citydreams">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">City Dreams</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="/home/neo/Descargas/meli/m.png" alt="City College Programs" class="project-image">
+                        <h3 class="project-title">Educational Support</h3>
+                        <p>Working at City College to support and empower students in achieving their educational and career aspirations.</p>
+                        <a href="https://www.dreamsffellows.org/" class="project-link">View Program →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Melissa Camacho. All rights reserved.</p>
+            <div style="margin-top: 1rem;">
+                <a href="mailto:contact@melissacamacho.com" style="color: white; text-decoration: none; margin: 0 10px;">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
